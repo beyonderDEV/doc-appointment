@@ -1,0 +1,22 @@
+@import './src/styles/_variables';
+
+.container {
+  height: 30px;
+  background-color: transparent;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+h5 {
+  margin: 2px 5px 0 0;
+  color: white;
+  text-shadow: $shadow;
+  text-align: end;
+}
+
+h4 {
+  margin: 2px 5px 0 0;
+  color: white;
+  text-shadow: $shadow;
+}

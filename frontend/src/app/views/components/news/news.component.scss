@@ -1,0 +1,104 @@
+@import './src/styles/_variables';
+
+.container {
+  display: flex;
+  width: auto;
+  max-height: 100%;
+  margin-left: 10%;
+  margin-right: 10%;
+  justify-content: center;
+}
+
+.jumbotron {
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  text-shadow: $shadow;
+}
+
+.slider {
+  margin-top: 30px;
+  font-size: 20px;
+}
+
+fa-icon:hover {
+  color: black;
+  cursor: pointer;
+}
+
+h2 {
+  margin-top: 10px;
+  margin-bottom: 0;
+  color: black;
+  text-shadow: $shadow;
+}
+
+.image {
+  margin-left: 150px;
+}
+
+img {
+  width: 300px;
+  height: 300px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  //max-height: 320px;
+  flex-wrap: wrap;
+}
+
+p {
+  color: black;
+  max-width: 500px;
+  min-width: 250px;
+  /*min-height: 300px;*/
+  font-size: 18px;
+}
+
+.content {
+  opacity: 1;
+  animation: fade 1s linear;
+}
+
+@keyframes fade {
+  0% { opacity: 0 }
+  100% { opacity: 1 }
+}
+
+.actionBtn {
+  border: 1px solid black;
+  border-radius: 5px;
+  background: white;
+  color: black;
+  font: $button-font;
+  //font-weight: bold;
+  padding: 5px 8px;
+  width: 80px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.actionBtn:hover {
+  cursor: pointer;
+  color: black;
+  background: #0af70a;
+  border: 1px solid #0af70a;
+}
+
+@media(max-width: 1190px) {
+  .row {
+    justify-content: left;
+  }
+  img {
+    display: none;
+  }
+
+}

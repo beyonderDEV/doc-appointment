@@ -1,0 +1,62 @@
+@import './src/styles/_variables';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+}
+
+h2 {
+  color: white;
+}
+
+input {
+  color: white;
+  margin-left: 50px;
+}
+
+label {
+  color: white;
+  font-size: large;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.action {
+  height: 50px;
+}
+
+alert  {
+  margin-top: -10px;
+}
+
+button {
+  border: 1px solid white;
+  background: $primary-color;
+  color: white;
+  font: $button-font;
+  padding: 3px 8px;
+  width: 130px;
+  margin-bottom: 10px;
+}
+
+button:hover {
+  cursor: pointer;
+  color: $primary-color;
+  background: white;
+  border: 1px solid white;
+}

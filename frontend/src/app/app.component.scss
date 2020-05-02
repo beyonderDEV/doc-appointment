@@ -1,0 +1,49 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+}
+
+
+
+app-toolbar {
+  top: 0;
+  min-width: 100%;
+  position: sticky;
+  z-index: 1;
+}
+
+app-footer {
+  margin-top: auto;
+  display: flex;
+}
+
+app-sidebar {
+  z-index: 100;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.container {
+  animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+
+router-outlet {
+  max-height: 100%;
+  animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,94 @@
+@import './src/styles/_variables';
+
+.container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: 400px;
+  width: 400px;
+}
+
+.accessDenied {
+  width: 400px;
+  height: 400px;
+  background-color: white;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+form {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+@media(max-width: 580px) {
+  .container {
+    width: 200px;
+    height: 450px;
+  }
+  .accessDenied {
+    width: 100%;
+  }
+  form {
+    width: 150px;
+  }
+}
+
+.formButtons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.actionBtn {
+  border: 1px solid black;
+  background: white;
+  color: black;
+  font: $button-font;
+  padding: 5px 10px;
+}
+
+.actionBtn:hover {
+  background: $primary-color;
+  color: white;
+  cursor: pointer;
+}
+
+input {
+  font-size: x-large;
+  padding: 5px 0;
+}
+
+h2 {
+  color: $primary-color;
+  width: 70%;
+  text-align: center;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.underForm {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 20px;
+}
+
+h4 {
+  margin: 0;
+  color: $primary-color;
+}
+
+a {
+  color: black;
+}
+
+a:hover {
+  cursor: pointer;
+  color: $primary-color;
+}

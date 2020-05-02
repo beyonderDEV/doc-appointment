@@ -1,0 +1,4 @@
+<app-dashboard *ngIf="currentUser?.userType === 'Doctor'"></app-dashboard>
+<app-news *ngIf="currentUser?.userType === 'Patient'"></app-news>
+
+

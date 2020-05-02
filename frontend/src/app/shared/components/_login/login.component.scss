@@ -1,0 +1,93 @@
+@import './src/styles/_variables';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 100px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 25px;
+  width: 25%;
+  height: 60%;
+}
+
+.title {
+  height: 50px;
+  margin-bottom: 25px;
+}
+
+h2 {
+  color: black;
+  text-shadow: $shadow;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+}
+
+@media(max-width: 450px) {
+  form {
+    width: 220px;
+  }
+}
+
+mat-form-field {
+  color: black;
+
+}
+
+mat-form-field * {
+  color: black;
+}
+
+
+
+input {
+  font-size: x-large;
+  padding: 5px 0;
+}
+
+.formButtons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.actionBtn {
+  border: 1px solid black;
+  background: white;
+  color: black;
+  font: $button-font;
+  padding: 5px 10px;
+}
+
+.actionBtn:hover {
+  cursor: pointer;
+  color: black;
+  background: #0af70a;
+}
+
+.invalid-feedback {
+  margin-top: -18px;
+}
+
+.underForm {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 20px;
+}
+
+h4 {
+  margin: 0;
+  color: black;
+  font-weight: lighter;
+}
+
+a {
+  color: green;
+}
+

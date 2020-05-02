@@ -1,0 +1,193 @@
+@import './src/styles/_variables';
+
+xunk-calendar [_ngcontent-smc-c7] {
+  $primarycolor: #1a44c2;
+}
+
+.container {
+  display: flex;
+  margin-top: 10px;
+  justify-content: center;
+  width: 100%;
+}
+
+.title {
+  display: flex;
+}
+
+h1 {
+  color: black;
+  margin-bottom: 0;
+  text-shadow: $shadow;
+}
+
+.content {
+  display: flex;
+  margin-top: 20px;
+  width: 80%;
+  justify-content: center;
+}
+
+h2 {
+  color: black;
+  margin-top: 28px;
+  text-shadow: $shadow;
+}
+
+.twoColumns {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+h3 {
+  color: black;
+  text-shadow: $shadow;
+}
+
+#dashboard {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  align-items: center;
+}
+
+#dashboardContent {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  height: 400px;
+  width: 100%;
+  border: 2px solid $primary-color;
+  margin-top: 9px;
+}
+
+#rightSideContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.table {
+  display: block;
+  max-width: 700px;
+}
+
+.flex-table {
+  display: flex;
+  flex-flow: row wrap;
+  transition: 0.5s;
+}
+
+.tableDiv {
+  box-sizing: border-box;
+  width: 700px;
+}
+
+.flex-row {
+  width: calc(100% / 4);
+  text-align: center;
+  padding: 0.5em 0.5em;
+  border-bottom: solid 1px black;
+}
+
+@media all and (max-width: 767px) {
+  .tableDiv {
+    width: 400px;
+  }
+
+  .flex-row {
+    width: calc(100% / 3);
+    border-bottom: solid 3px white;
+
+    &.first {
+      width: 100%;
+      border-bottom: solid 1px white;
+    }
+  }
+
+}
+
+@media all and (max-width: 430px) {
+  .tableDiv {
+    width: 300px;
+  }
+
+  .flex-table {
+    .flex-row {
+      border-bottom: solid 1px white;
+    }
+    .flex-row:last-of-type {
+      border-bottom: solid 3px white;
+    }
+  }
+
+  .flex-row {
+    width: 100%;
+
+    &.first {
+      width: 100%;
+    }
+  }
+}
+
+.tBody {
+  max-height: 400px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  border: 1px solid black;
+}
+
+#noVisits {
+  margin-left: 20px;
+}
+
+h4 {
+  text-shadow: $shadow;
+}
+
+.tableConfirmed {
+  background: #0af70a;
+}
+
+.tableDeclined {
+  background: red;
+  opacity: 0.7;
+}
+
+.tHead {
+  margin-bottom: 10px;
+}
+
+#conductBtn:hover {
+  cursor: pointer;
+}
+
+#style-11::-webkit-scrollbar {
+  width: 10px;
+  background-color: transparent;
+}
+
+#style-11::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: rgba(0,0,0,0.1);
+  border: 1px solid #ccc;
+}
+
+#style-11::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: linear-gradient(to right, #fff, #e4e4e4);
+  border: 1px solid #aaa;
+}
+
+#style-11::-webkit-scrollbar-thumb:hover {
+  background: #fff;
+}
+
+#style-11::-webkit-scrollbar-thumb:active {
+  background: linear-gradient(to right, #22ADD4, #1E98BA);
+}
+
+
+
+
